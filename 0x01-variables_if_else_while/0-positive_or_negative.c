@@ -11,7 +11,7 @@ int main(void)
 	int n;
 
 	srand(time(NULL));
-	number = rand();
+	n = rand();
 	if (n == 0)
 	{
 	printf("%d is zero\n", n);
