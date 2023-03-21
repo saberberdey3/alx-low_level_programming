@@ -1,4 +1,4 @@
-#Alx Project : 0x02 - Functions, nested loops
+# Alx Project : 0x02 - Functions, nested loops
 
 ## Learning Objectives :
 * What are nested loops and how to use them
@@ -9,6 +9,6 @@
 * What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89
 * What are header files and how to to use them with #include
 
-#Description of each File :
+### Description of each File :
 
-- [here](./0-putchar.c) : Write a program that prints _putchar , followed by a new line
+- [0-putchar.c](./0-putchar.c) : Write a program that prints _putchar , followed by a new line
