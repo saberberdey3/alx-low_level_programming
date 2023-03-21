@@ -6,12 +6,12 @@
  * Return: value of the last digit
  */
 
- int print_last_digit(int nld)
- {
+int print_last_digit(int nld)
+{
 	 int nb;
 
-	 nb = nld % 10;
-	 if (nb < 0)
+	nb = nld % 10;
+	if (nb < 0)
 	{
 		nb = (-1 * nb);
 	}
