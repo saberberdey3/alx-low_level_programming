@@ -8,19 +8,19 @@
 
 int main(void)
 {
-    unsigned long int i, prev = 1, current = 2, next;
+unsigned long int i, prev = 1, current = 2, next;
 
-    printf("%lu, %lu", prev, current);
+	printf("%lu, %lu", prev, current);
 
-    for (i = 3; i <= 98; i++)
-    {
-        next = prev + current;
-        printf(", %lu", next);
-        prev = current;
-        current = next;
-    }
+	for (i = 3; i <= 98; i++)
+	{
+	next = prev + current;
+	printf(", %lu", next);
+	prev = current;
+	current = next;
+	}
 
-    printf("\n");
+	printf("\n");
 
-    return (0);
+	return (0);
 }
