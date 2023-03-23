@@ -1,6 +1,6 @@
-##Alx : More Projects About functions and nested loops
+## Alx : More Projects About functions and nested loops
 
-#Learning Objectives :
+# Learning Objectives :
 
 - What are nested loops and how to use them
 - What is a function and how do you use functions
@@ -10,7 +10,7 @@
 - What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89
 - What are header files and how to to use them with #include
 
-#Tasks And Requirements :
+# Tasks And Requirements :
 
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
