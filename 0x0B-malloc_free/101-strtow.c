@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
  * count_word - helper function to count the number of words in a string
@@ -23,13 +23,29 @@ int count_word(char *s)
 		flag = 1;
 		w++;
 	}
-}
+	}
 
 	return (w);
 }
 
 /**
- * strtow - splits a string into words
+ * get_word_length - helper function to get the length of a word
+ * @s: pointer to the start of the word
+ *
+ * Return: length of the word
+ */
+int get_word_length(char *s)
+{
+	int len = 0;
+
+	while (*(s + len) != ' ' && *(s + len) != '\0')
+	len++;
+
+	return (len);
+}
+
+/**
+ * **strtow - splits a string into words
  * @str: string to split
  *
  * Return: pointer to an array of strings (Success)
@@ -40,14 +56,14 @@ char **strtow(char *str)
 	char **matrix, *tmp;
 	int i, k = 0, len = 0, words, c = 0, start, end;
 
-	if (str == NULL || str[0] == '\0')
-		return (NULL);
+	if (str == NULL || *str == '\0')
+	return (NULL);
 
-	while (*(str + len))
-		len++;
+	len = strlen(str);
 	words = count_word(str);
+
 	if (words == 0)
-		return (NULL);
+	return (NULL);
 
 	matrix = malloc(sizeof(char *) * (words + 1));
 	if (matrix == NULL)
@@ -63,13 +79,13 @@ char **strtow(char *str)
 		tmp = malloc(sizeof(char) * (c + 1));
 		if (tmp == NULL)
 			return (NULL);
-		while (start < end)
-			*tmp++ = str[start++];
-		*tmp = '\0';
-		matrix[k] = tmp - c;
+
+		strncpy(tmp, str + start, c);
+		*(tmp + c) = '\0';
+		matrix[k] = tmp;
 		k++;
 		c = 0;
-	}
+		}
 	}
 	else if (c++ == 0)
 		start = i;
